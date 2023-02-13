@@ -12,9 +12,9 @@ const HomePage = () => {
         <h2>I am going to lay out functional spanish that will get you speaking quick</h2>
       </div>
       <Conjugations />
-      <Phrases />
-      <Words />
-      <Method />
+      {/* <Phrases /> */}
+      {/* <Words /> */}
+      {/* <Method /> */}
 
     </div>
   )
