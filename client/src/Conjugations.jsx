@@ -22,7 +22,52 @@ const Conjugations = (props) => {
 
         {props.conj.data.map((data) => {
           return (
-            <div>test</div>
+            <div>
+          <h2 className="cong-title">{data.conj_type}</h2>
+          <h3>{data.ending}</h3>
+          <h4>{data.word}</h4>
+          <table className="congugation-table">
+            <tr>
+              <td>Who</td>
+              <td>congugation</td>
+              <td>conjugated</td>
+              <td>example sentence</td>
+            </tr>
+            <tr>
+              <td>Yo - I</td>
+              <td>{data.yo}</td>
+              <td>{data.yo_def}</td>
+              <td>{data.yo_ex}</td>
+            </tr>
+            <tr>
+              <td>Tu - You</td>
+              <td>{data.tu}</td>
+              <td>{data.tu_def}</td>
+              <td>{data.tu_ex}</td>
+            </tr>
+            <tr>
+              <td>El/Ella - He/She</td>
+              <td>{data.el}</td>
+              <td>{data.el_def}</td>
+              <td>{data.el_ex}</td>
+            </tr>
+            <tr>
+              <td>Nosotros - We</td>
+              <td>{data.nos}</td>
+              <td>{data.nos_def}</td>
+              <td>{data.nos_ex}</td>
+            </tr>
+            <tr>
+              <td>Ellos/Ellas - They</td>
+              <td>{data.ellos}</td>
+              <td>{data.ellos_def}</td>
+              <td>{data.ellos_ex}</td>
+            </tr>
+          </table>
+
+
+
+            </div>
           )
 
           })
@@ -31,7 +76,7 @@ const Conjugations = (props) => {
 
 
 
-      <h1>Indicative - Used to talk about reality & facts. Describes actions.</h1>
+      {/* <h1>Indicative - Used to talk about reality & facts. Describes actions.</h1>
 
       <h1>Simple</h1>
 
@@ -411,7 +456,7 @@ const Conjugations = (props) => {
               <td>Ellos escribían - They wrote</td>
               <td>Ellos escribían contigo - They wrote with you</td>
             </tr>
-          </table>
+          </table> */}
 
     </div>
   )
