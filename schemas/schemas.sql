@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS verbs (
   nos_ex VARCHAR(100),
   ellos VARCHAR(100),
   ellos_ex VARCHAR(100),
-  exp_key VARCHAR(100)
+  exp_key VARCHAR(10con0)
 );
 
 CREATE TABLE IF NOT EXISTS endings (

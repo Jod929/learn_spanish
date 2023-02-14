@@ -13,15 +13,16 @@ const { conj } = require('../controller/conj.js');
 
 app.get('/conj', (req, res) => {
 
-  // conj(req, res)
-  //   .then((data) => {
-  //     res.send(data);
-  //   })
-  //   .catch((err) => {
-  //     res.send(500)
-  //   })
+  conj(req, res)
+    .then((data) => {
+      res.send(data);
+    })
+    .catch((err) => {
+      console.log(err)
+      res.send(500)
+    })
 
-  res.send('Here is the conj data');
+  // res.send('Here is the conj data');
 })
 
 app.listen(port, () => {

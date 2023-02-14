@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Conjugations = () => {
+const Conjugations = (props) => {
   return (
     <div className="conj-container">
 
@@ -18,6 +18,18 @@ const Conjugations = () => {
         Simple - I run.
         Perfect - I had run.
       </p>
+
+
+        {props.conj.data.map((data) => {
+          return (
+            <div>test</div>
+          )
+
+          })
+        }
+
+
+
 
       <h1>Indicative - Used to talk about reality & facts. Describes actions.</h1>
 

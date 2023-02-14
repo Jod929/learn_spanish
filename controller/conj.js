@@ -3,7 +3,7 @@ const { getConj } = require('../model/getConj.js');
 module.exports = {
   conj: (req, res) => {
     return new Promise((resolve, reject) => {
-      getConj(req)
+      getConj()
       .then((data) => {
         resolve(data);
       })

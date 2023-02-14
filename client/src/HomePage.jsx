@@ -8,6 +8,7 @@ import Method from './Method.jsx';
 const HomePage = () => {
 
   const [data, setData] = useState([]);
+  const [done, setDone] = useState(false);
 
   // Similar to componentDidMount and componentDidUpdate:
   useEffect(() => {
@@ -15,6 +16,7 @@ const HomePage = () => {
       .then((data) => {
         console.log('DATA ', data)
         setData(data);
+        setDone(true);
       })
       .catch((err) => {
         console.log('there was an error fetching conjugations')
@@ -28,7 +30,8 @@ const HomePage = () => {
         <h1>Welcome to Learn Spanish</h1>
         <h2>I am going to lay out functional spanish that will get you speaking quick</h2>
       </div>
-      <Conjugations />
+      {done ? <Conjugations conj = {data}/> : null}
+      {/* <Conjugations conj = {data}/> */}
       {/* <Phrases /> */}
       {/* <Words /> */}
       {/* <Method /> */}
