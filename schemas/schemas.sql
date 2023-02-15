@@ -94,12 +94,12 @@ INSERT INTO endings (id, ending, yo, tu, el, nos, ellos, conj_type) VALUES (
 );
 
 INSERT INTO endings (id, ending, yo, tu, el, nos, ellos, conj_type) VALUES (
-  1, 'ar', 'aba', 'abas', 'aba', 'abamos', 'aban', 'Imperfect Past'
+  4, 'ar', 'aba', 'abas', 'aba', 'abamos', 'aban', 'Imperfect Past'
 );
 INSERT INTO endings (id, ending, yo, tu, el, nos, ellos, conj_type) VALUES (
-  2, 'er', 'ía', 'ías', 'ía', 'íamos', 'ían', 'Imperfect Past'
+  5, 'er', 'ía', 'ías', 'ía', 'íamos', 'ían', 'Imperfect Past'
 );
 INSERT INTO endings (id, ending, yo, tu, el, nos, ellos, conj_type) VALUES (
-  3, 'ir', 'ía', 'ías', 'ía', 'íamos', 'ían', 'Imperfect Past'
+  6, 'ir', 'ía', 'ías', 'ía', 'íamos', 'ían', 'Imperfect Past'
 );
 

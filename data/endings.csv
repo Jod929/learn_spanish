@@ -1,0 +1,31 @@
+id, ending, yo, tu, el, nos, ellos, conj_type
+1, 'ar', 'o', 'as', 'a', 'amos', 'an', 'Simple Present'
+2, 'er', 'o', 'es', 'e', 'emos', 'en', 'Simple Present'
+3, 'ir', 'o', 'es', 'i', 'imos', 'en', 'Simple Present'
+4, 'ar', 'aba', 'abas', 'aba', 'abamos', 'aban', 'Imperfect Past'
+5, 'er', 'ía', 'ías', 'ía', 'íamos', 'ían', 'Imperfect Past'
+6, 'ir', 'ía', 'ías', 'ía', 'íamos', 'ían', 'Imperfect Past'
+7, 'ar', 'é', 'aste', 'ó', 'amos', 'aron', 'Preterite'
+8, 'er', 'í', 'iste', 'ió', 'imos', 'ieron', 'Preterite'
+9, 'ir', 'í', 'iste', 'ió', 'imos', 'ieron', 'Preterite'
+10, 'ar', 'é', 'ás', 'á', 'emos', 'án', 'Future'
+11, 'er', 'án', 'ás', 'á', 'emos', 'án', 'Future'
+12, 'ir', 'é', 'ás', 'á', 'emos', 'án', 'Future'
+13, 'ar', 'ía', 'ías', 'ía', 'íamos', 'ían', 'Conditonal'
+14, 'er', 'ían', 'ías', 'ía', 'íamos', 'ían', 'Conditional'
+15, 'ir', 'ía', 'ías', 'ía', 'íamos', 'ían', 'Conditional'
+16, 'ar', 'he + ado', 'has + ado', 'ha + ado', 'hemos + ado', 'han + ado', 'Present Perfect'
+17, 'er', 'he + ido', 'has + ido', 'ha + ido', 'hemos + ido', 'han + ido', 'Present Perfect'
+18, 'ir', 'he + ido', 'has + ido', 'ha + ido', 'hemos + ido', 'han + ido', 'Present Perfect'
+19, 'ar', 'había + ado', 'habías + ado', 'había + ado', 'habíamos + ado', 'habían + ado', 'Past Perfect'
+20, 'er', 'había + ido', 'habías + ido', 'había + ido', 'habíamos + ido', 'habían + ido', 'Past Perfect'
+21, 'ir', 'había + ido', 'habías + ido', 'había + ido', 'habíamos + ido', 'habían + ido', 'Past Perfect'
+22, 'ar', 'habría + ado', 'habrías + ado', 'habría + ado', 'habríamos + ado', 'habrían + ado', 'Conditional Perfect'
+23, 'er', 'habría + ido', 'habrías + ido', 'habría + ido', 'habríamos + ido', 'habrían + ido', 'Conditional Perfect'
+24, 'ir', 'habría + ido', 'habrías + ido', 'habría + ido', 'habríamos + ido', 'habrían + ido', 'Conditional Perfect'
+
+STILL NEED TO FINISH OFF THE CONDITIONAL
+
+él compró
+
+yo compré
