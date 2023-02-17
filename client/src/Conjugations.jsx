@@ -20,9 +20,9 @@ const Conjugations = (props) => {
       </p>
 
 
-        {props.conj.data.map((data) => {
+        {props.conj.data.map((data, i) => {
           return (
-            <div>
+            <div key={i}>
               <h2 className="cong-title">{data.conj_type}</h2>
               <h3>{data.ending}</h3>
               <h4>{data.word}</h4>

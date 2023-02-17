@@ -4,6 +4,7 @@ import Conjugations from './Conjugations.jsx';
 import Phrases from './CommonPhrases.jsx';
 import Words from './CommonWords.jsx';
 import Method from './Method.jsx';
+import FlashCards from './FlashCards.jsx';
 
 const HomePage = () => {
 
@@ -30,7 +31,8 @@ const HomePage = () => {
         <h1>Welcome to Learn Spanish</h1>
         <h2>I am going to lay out functional spanish that will get you speaking quick</h2>
       </div>
-      {done ? <Conjugations conj = {data}/> : null}
+      {/* {done ? <Conjugations conj = {data}/> : null} */}
+      {done ? <FlashCards conj = {data}/> : null}
       {/* <Conjugations conj = {data}/> */}
       {/* <Phrases /> */}
       {/* <Words /> */}

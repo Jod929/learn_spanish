@@ -1,0 +1,64 @@
+import React, { useState, useEffect } from 'react';
+
+const Card = (props) => {
+
+  const [flipped, flip] = useState(false);
+  const [card, setCard] = useState([]);
+
+  useEffect(() => {
+
+    let card = getRandCard(props.data);
+    setCard(card);
+
+    console.log(card);
+  }, []);
+
+  const getRandCard = (cards) => {
+    let personArr = ['yo', 'tu', 'el', 'nos', 'ellos'];
+
+    let item = cards[Math.floor(Math.random()*cards.length)];
+    let randPerson = personArr[Math.floor(Math.random()*personArr.length)];
+
+    let conj_def = randPerson + '_def';
+    let sentence = randPerson + '_ex';
+
+    let card = {
+      word: item.word,
+      conj_type: item.conj_type,
+      person: randPerson,
+      conj_ending: item[randPerson],
+      conj_def: item[conj_def],
+      sentence: item[sentence]
+    }
+
+    return card;
+  }
+
+  return (
+    <div>
+
+      {flipped ?
+      <div className="card-flipped">
+        <h1>{card.conj_ending}</h1>
+        <h2>{card.conj_def}</h2>
+        <h3>{card.sentence}</h3>
+
+        <button onClick = {() => flip(!flipped)}>flip</button>
+       </div>
+      :
+
+      <div className="card-not-flipped">
+        <h1>{card.word}</h1>
+        <h2>{card.conj_type}</h2>
+        <h3>{card.person}</h3>
+
+        <button onClick = {() => flip(!flipped)}>flip</button>
+      </div>
+      }
+
+    <button onClick = {() => setCard(getRandCard(props.data))}>new word</button>
+    </div>
+  )
+}
+
+export default Card;
