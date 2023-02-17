@@ -13,6 +13,12 @@ const Card = (props) => {
     console.log(card);
   }, []);
 
+  const newCard = () => {
+    let card = getRandCard(props.data);
+    setCard(card);
+    flip(false);
+  }
+
   const getRandCard = (cards) => {
     let personArr = ['yo', 'tu', 'el', 'nos', 'ellos'];
 
@@ -56,7 +62,7 @@ const Card = (props) => {
       </div>
       }
 
-    <button onClick = {() => setCard(getRandCard(props.data))}>new word</button>
+    <button onClick = {() => newCard()}>new word</button>
     </div>
   )
 }
