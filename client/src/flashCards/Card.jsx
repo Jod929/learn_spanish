@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 
 const Card = (props) => {
 
+  console.log('cardprops', props)
+
   const [flipped, flip] = useState(false);
   const [card, setCard] = useState([]);
 
@@ -34,7 +36,8 @@ const Card = (props) => {
       person: randPerson,
       conj_ending: item[randPerson],
       conj_def: item[conj_def],
-      sentence: item[sentence]
+      sentence: item[sentence],
+      exp: item.explanation
     }
 
     return card;
@@ -55,8 +58,10 @@ const Card = (props) => {
 
       <div className="card-not-flipped">
         <h1>{card.word}</h1>
-        <h2>{card.conj_type}</h2>
         <h3>{card.person}</h3>
+        <h3>{card.conj_type}</h3>
+        <p>{card.exp}</p>
+
 
         <button onClick = {() => flip(!flipped)}>flip</button>
       </div>

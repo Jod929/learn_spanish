@@ -1,7 +1,7 @@
 id, ending, yo, tu, el, nos, ellos, conj_type
 1, "ar", "o", "as", "a", "amos", "an", "Simple Present"
 2, "er", "o", "es", "e", "emos", "en", "Simple Present"
-3, "ir", "o", "es", "i", "imos", "en", "Simple Present"
+3, "ir", "o", "es", "e", "imos", "en", "Simple Present"
 4, "ar", "aba", "abas", "aba", "abamos", "aban", "Imperfect Past"
 5, "er", "ía", "ías", "ía", "íamos", "ían", "Imperfect Past"
 6, "ir", "ía", "ías", "ía", "íamos", "ían", "Imperfect Past"
