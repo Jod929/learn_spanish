@@ -15,15 +15,16 @@ const FlashCards = (props) => {
     const words = props.conj.data;
     let testWord = words[0].conj_type;
 
-    console.log(tense)
-    console.log(testWord)
+    let tenses = [];
 
     for (let i = 0; i < words.length; i++) {
       if (words[i].conj_type === ` "${tense}"`) {
-        console.log(words[i]);
+        tenses.push(words[i]);
       }
     }
 
+    changeTense(tenses);
+    changeSelect('Other');
 
   }
 
@@ -35,11 +36,11 @@ const FlashCards = (props) => {
 
       <div>Score: {score}</div>
 
-    {select === 'All' ?
-    <Card data = {props.conj.data} />
-    :
-    <Card data = {0} />
-    }
+        {select === 'All' ?
+        <Card data = {props.conj.data} />
+        :
+        <Card data = {cardData} />
+        }
       {/* <Card data = {props.conj.data} /> */}
     </div>
   )
