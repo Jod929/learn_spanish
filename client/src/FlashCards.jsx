@@ -13,28 +13,17 @@ const FlashCards = (props) => {
     let tense = event.target.value;
 
     const words = props.conj.data;
+    let testWord = words[0].conj_type;
 
-    changeSelect(tense);
-
-    let tenses = [];
-
-    console.log(props.conj.data)
-
+    console.log(tense)
+    console.log(testWord)
 
     for (let i = 0; i < words.length; i++) {
-
-      // console.log(words[i], tense)
-
-      if (words[i].conj_type === tense) {
-        console.log('somethin')
-        tenses.push(words[i])
+      if (words[i].conj_type === ` "${tense}"`) {
+        console.log(words[i]);
       }
-
     }
 
-    console.log('tesn', tenses)
-
-    // changeTense(tenses);
 
   }
 

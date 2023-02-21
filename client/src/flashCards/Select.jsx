@@ -11,7 +11,7 @@ const Select = (props) => {
       <select onChange={() => props.updateTense(event)} >
         <option value="Simple Present">Simple Present</option>
         <option value="Future">Future</option>
-        <option value="Pretertite">Pretertite</option>
+        <option value="Preterite">Pretertite</option>
         <option value="Imperfect Past">Imperfect Past</option>
       </select>
     </div>

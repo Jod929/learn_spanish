@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 
 const Card = (props) => {
 
-  console.log('cardprops', props)
-
   const [flipped, flip] = useState(false);
   const [card, setCard] = useState([]);
 
@@ -12,7 +10,6 @@ const Card = (props) => {
     let card = getRandCard(props.data);
     setCard(card);
 
-    console.log(card);
   }, []);
 
   const newCard = () => {
