@@ -10,6 +10,7 @@ const HomePage = () => {
 
   const [data, setData] = useState([]);
   const [done, setDone] = useState(false);
+  const [page, setPage] = useState('Flash');
 
   // Similar to componentDidMount and componentDidUpdate:
   useEffect(() => {
