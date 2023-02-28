@@ -23,3 +23,7 @@ id, ending, yo, tu, el, nos, ellos, conj_type
 22, "ar", "habría + ado", "habrías + ado", "habría + ado", "habríamos + ado", "habrían + ado", "Conditional Perfect"
 23, "er", "habría + ido", "habrías + ido", "habría + ido", "habríamos + ido", "habrían + ido", "Conditional Perfect"
 24, "ir", "habría + ido", "habrías + ido", "habría + ido", "habríamos + ido", "habrían + ido", "Conditional Perfect"
+25, "ar", "habré + ado", "habrás + ado", "habrá + ado", "habremos + ado", "habrán + ado", "Future Perfect"
+26, "er", "habré + ido", "habrás + ido", "habrá + ido", "habremos + ido", "habrán + ido", "Future Perfect"
+27, "ir", "habrá + ido", "habrás + ido", "habrá + ido", "habremos + ido", "habrán + ido", "Future Perfect"
+
