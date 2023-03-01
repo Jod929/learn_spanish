@@ -10,6 +10,7 @@ const HomePage = () => {
 
   const [data, setData] = useState([]);
   const [done, setDone] = useState(false);
+  const [page, setPage] = useState('Flash');
 
   // Similar to componentDidMount and componentDidUpdate:
   useEffect(() => {
@@ -29,14 +30,19 @@ const HomePage = () => {
     <div className="homepage-container">
       <div className="homepage-header">
         <h1>Welcome to Learn Spanish</h1>
-        <h2>I am going to lay out functional spanish that will get you speaking quick</h2>
+        <h2>Please checkout all conjugations and use the flashcards to learn!</h2>
+        <button onClick={() => {setPage('Flash')}}>Conjugation Flash Cards</button>
+        <button onClick={() => {setPage('Conj')}}>See All Conjugations</button>
+        {/* <button onClick={() => {setPage('Phrase')}}>See Common Phrases</button>
+        <button onClick={() => {setPage('Words')}}>See Common Words</button>
+        <button onClick={() => {setPage('Method')}}>Learning Method</button> */}
       </div>
-      {/* {done ? <Conjugations conj = {data}/> : null} */}
-      {done ? <FlashCards conj = {data}/> : null}
-      {/* <Conjugations conj = {data}/> */}
-      {/* <Phrases /> */}
-      {/* <Words /> */}
-      {/* <Method /> */}
+
+      {done && page === 'Flash' && <FlashCards conj = {data}/> }
+      {done && page === 'Conj' && <Conjugations conj = {data}/> }
+      {/* {done && page === 'Phrase' && <Phrases /> }
+      {done && page === 'Words' && <Words />}
+      {done && page === 'Method' && <Method />} */}
 
     </div>
   )

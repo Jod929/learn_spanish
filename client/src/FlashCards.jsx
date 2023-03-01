@@ -12,18 +12,23 @@ const FlashCards = (props) => {
   const updateTense = (event) => {
     let tense = event.target.value;
 
-    const words = props.conj.data;
-    let testWord = words[0].conj_type;
+    if (tense === 'All') {
+      changeTense(props.conj.data);
+      changeSelect('All');
+    } else {
+      const words = props.conj.data;
 
-    console.log(tense)
-    console.log(testWord)
+      let tenses = [];
 
-    for (let i = 0; i < words.length; i++) {
-      if (words[i].conj_type === ` "${tense}"`) {
-        console.log(words[i]);
+      for (let i = 0; i < words.length; i++) {
+        if (words[i].conj_type === ` "${tense}"`) {
+          tenses.push(words[i]);
+        }
       }
-    }
 
+      changeTense(tenses);
+      changeSelect('Other');
+    }
 
   }
 
@@ -33,14 +38,14 @@ const FlashCards = (props) => {
 
       <Select updateTense={updateTense} />
 
-      <div>Score: {score}</div>
+      {/* <div>Score: {score}</div> */}
 
-    {select === 'All' ?
-    <Card data = {props.conj.data} />
-    :
-    <Card data = {0} />
-    }
-      {/* <Card data = {props.conj.data} /> */}
+        {select === 'All' ?
+        <Card data = {props.conj.data} />
+        :
+        <Card data = {cardData} />
+        }
+
     </div>
   )
 }

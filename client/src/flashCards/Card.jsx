@@ -10,7 +10,7 @@ const Card = (props) => {
     let card = getRandCard(props.data);
     setCard(card);
 
-  }, []);
+  }, [props.data]);
 
   const newCard = () => {
     let card = getRandCard(props.data);
