@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Conjugations from './Conjugations.jsx';
-import Phrases from './CommonPhrases.jsx';
-import Words from './CommonWords.jsx';
-import Method from './Method.jsx';
+// import Phrases from './CommonPhrases.jsx';
+// import Words from './CommonWords.jsx';
+// import Method from './Method.jsx';
 import FlashCards from './FlashCards.jsx';
 
 const HomePage = () => {
