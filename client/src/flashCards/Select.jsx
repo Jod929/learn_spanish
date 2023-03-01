@@ -14,6 +14,10 @@ const Select = (props) => {
         <option value="Future">Future</option>
         <option value="Preterite">Pretertite</option>
         <option value="Imperfect Past">Imperfect Past</option>
+        <option value="Conditional">Conditional</option>
+        <option value="Present Perfect">Present Perfect</option>
+        <option value="Conditional Perfect">Conditional Perfect</option>
+        <option value="Future Perfect">Future Perfect</option>
       </select>
     </div>
   )
