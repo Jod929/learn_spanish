@@ -7,7 +7,7 @@ module.exports = {
       return new Promise((resolve, reject) => {
         connection.query(query, (err, results) => {
           if (err) reject(err);
-          console.log(results)
+          // console.log(results)
           resolve(results);
         })
       })
