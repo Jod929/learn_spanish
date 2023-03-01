@@ -1,5 +1,7 @@
 const express = require('express');
 const app = express();
+const dotenv = require('dotenv');
+dotenv.config();
 const path = require('path');
 const port = process.env.PORT || 8080;
 const client = path.resolve(__dirname, '../client/dist');
