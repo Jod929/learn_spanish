@@ -7,7 +7,8 @@
     "client-dev": "npx webpack --watch",
     "build": "npx webpack",
     "start": "node server/index.js",
-    "init-db": "mysql -u root -p < /Users/joshkrebs/learn_spanish/learn_spanish/schemas/schemas.sql"
+    "init-db": "mysql -u root -p < /Users/joshkrebs/learn_spanish/learn_spanish/schemas/schemas.sql",
+    "prod": "npx webpack --watch & npx nodemon --watch server server/index.js"
   },
   "license": "Unlicensed",
   "dependencies": {
