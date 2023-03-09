@@ -5,10 +5,10 @@ files:
     destination: /home/ec2-user/learn_spanish
 # permissions: read-all|write-all
 hooks:
-  ApplicationStop:
-   - location: scripts/application_stop.sh
-     timeout: 6
-     runas: ec2-user
+  # ApplicationStop:
+  #  - location: scripts/application_stop.sh
+  #    timeout: 6
+  #    runas: ec2-user
 # DownloadBundle:
   BeforeInstall:
    - location: scripts/change_permissions.sh
