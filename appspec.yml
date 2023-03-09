@@ -1,0 +1,23 @@
+# version: 0.0
+# os: ubuntu
+# files:
+#   - source: /
+#     destination: /home/ubuntu/learn_spanish
+# # permissions: read-all|write-all
+# hooks:
+# # ApplicationStop:
+# # DownloadBundle:
+#   BeforeInstall:
+#    - location: scripts/change_permissions.sh
+#      timeout: 6
+#      runas: ubuntu
+# # Install:
+#   AfterInstall:
+#    - location: scripts/after_install.sh
+#      timeout: 300
+#      runas: ubuntu
+#   ApplicationStart:
+#    - location: scripts/application_start.sh
+#      timeout: 300
+#      runas: ubuntu
+# # ValidateService:
