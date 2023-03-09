@@ -10,4 +10,4 @@ sudo npm install >> /home/ec2-user/learn_spanish/deploy.log
 
 echo 'running build' >> /home/ec2-user/learn_spanish/deploy.log
 
-npm run build >> /home/ec2-user/learn_spanish/deploy.log
+sudo npm run build >> /home/ec2-user/learn_spanish/deploy.log
