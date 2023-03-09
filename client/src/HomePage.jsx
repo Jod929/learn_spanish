@@ -29,7 +29,7 @@ const HomePage = () => {
   return (
     <div className="homepage-container">
       <div className="homepage-header">
-        <h1>gback to basics</h1>
+        <h1>just build</h1>
         <h2>Please checkout all conjugations and use the flashcards to learn!</h2>
         <button onClick={() => {setPage('Flash')}}>Conjugation Flash Cards</button>
         <button onClick={() => {setPage('Conj')}}>See All Conjugations</button>
