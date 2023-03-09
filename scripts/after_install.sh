@@ -8,6 +8,3 @@ cd /home/ec2-user/learn_spanish >> /home/ec2-user/learn_spanish/deploy.log
 echo 'npm install' >> /home/ec2-user/learn_spanish/deploy.log
 sudo npm install >> /home/ec2-user/learn_spanish/deploy.log
 
-sudo chmod -R 777 /home/ec2-user/learn_spanish
-
-npm run build >> /home/ec2-user/learn_spanish/deploy.log
