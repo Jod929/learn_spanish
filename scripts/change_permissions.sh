@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo chmod -R 777 /home/ubuntu/learn_spanish
+sudo chmod -R 777 /home/ec2-user/learn_spanish

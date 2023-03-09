@@ -1,15 +1,15 @@
 #!/bin/bash
 
-echo 'application start is being ran' >> /home/ubuntu/learn_spanish/deploy.log
+echo 'application start is being ran' >> /home/ec2-user/learn_spanish/deploy.log
 
-echo 'run application_start.sh: ' >> /home/ubuntu/learn_spanish/deploy.log
+echo 'run application_start.sh: ' >> /home/ec2-user/learn_spanish/deploy.log
 
-cd /home/ubuntu/learn_spanish
+cd /home/ec2-user/learn_spanish
 
-echo 'building app' >> /home/ubuntu/learn_spanish/deploy.log
+echo 'building app' >> /home/ec2-user/learn_spanish/deploy.log
 
-sudo npm run build >> /home/ubuntu/learn_spanish/deploy.log
+sudo npm run build >> /home/ec2-user/learn_spanish/deploy.log
 
-echo 'pm2 restart nodejs-express-app' >> /home/ubuntu/learn_spanish/deploy.log
+echo 'pm2 restart nodejs-express-app' >> /home/ec2-user/learn_spanish/deploy.log
 
-sudo pm2 restart learn_spanish >> /home/ubuntu/learn_spanish/deploy.log
+sudo pm2 restart learn_spanish >> /home/ec2-user/learn_spanish/deploy.log
