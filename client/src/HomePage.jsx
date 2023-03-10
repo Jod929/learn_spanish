@@ -29,7 +29,7 @@ const HomePage = () => {
   return (
     <div className="homepage-container">
       <div className="homepage-header">
-        <h1>put npx in there</h1>
+        <h1>addede real symbolic link</h1>
         <h2>Please checkout all conjugations and use the flashcards to learn!</h2>
         <button onClick={() => {setPage('Flash')}}>Conjugation Flash Cards</button>
         <button onClick={() => {setPage('Conj')}}>See All Conjugations</button>
